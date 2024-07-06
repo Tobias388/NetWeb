@@ -263,7 +263,7 @@
 
 .background_img {
     width: 100%;
-    height: 320%;
+    height: 360%;
     object-fit: cover;
     position: absolute;
     opacity: .8;
@@ -289,22 +289,24 @@
 }
 
 .slider_works_container {
-    width: 100%;
-    height: 400px;
-    overflow: auto;
+    width: 340px;
+    height: 340px;
     margin: 60px 0;
+    position: relative;
+    overflow: hidden;
 
-    display: grid;
+    display: flex;
 }
 
 .slider_works {
-    width: 100%;
-    height: auto;
+    width: 200%;
+    height: 100%;
     list-style: none;
     padding: 0 20px;
+    transition: linear all .2s;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 30px;
 }
@@ -312,17 +314,18 @@
 .work {
     width: 300px;
     height: 300px;
-    border-radius: 10px;
-    transition: linear all .2s;
-    border: 2px solid var(--color_light_grey);
-    background: var(--color_light_grey);
-    padding: 10px 30px;
+    z-index: 100;
 }
 
 .work_link {
+    border-radius: 10px;
+    transition: linear all .2s;
     width: 100%;
     height: 100%;
     text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid var(--color_light_grey);
+    background: var(--color_light_grey);
 
     display: flex;
     justify-content: space-evenly;
@@ -358,7 +361,7 @@
     box-sizing: content-box;
 }
 
-.work:hover {
+.work_link:hover {
     -webkit-box-shadow: 10px 10px 0 #78011688, 20px 20px 0 #78011666;
     box-shadow: 10px 10px 0 #78011688, 20px 20px 0 #78011666;
     border: 2px solid #780116;
@@ -367,11 +370,12 @@
     transform: translate(-20px, -20px);
 }
 
-.work:hover .work_arrow {
+.work_link:hover .work_arrow {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background: #780116;
+    background: #87fee9;
+    filter: invert(100%);
 }
 
 .work_type {
@@ -392,6 +396,34 @@
     bottom: 0;
     left: 0;
     z-index: -100;
+}
+
+.slider_works_arrows_container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider_works_arrow {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 0;
+}
+
+.slider_works_arrow_left {
+    transform: rotateZ(180deg);
+    left: 0;
+    display: none;
+}
+
+.slider_works_arrow_right {
+    right: 0;
 }
 
 .section_how_we_work {
@@ -1059,6 +1091,12 @@
     .ready_btn {
         width: 100%;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .banner_btn_container {
+        width: 94%;
     }
 }
 
