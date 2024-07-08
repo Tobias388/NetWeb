@@ -345,7 +345,7 @@
     width: 100%;
     height: auto;
     position: relative;
-    padding: 25px 75px;
+    padding: 25px 0;
 
     display: flex;
     justify-content: center;
@@ -360,8 +360,9 @@
 }
 
 .slider_works_container {
-    width: 340px;
-    height: 340px;
+    width: 290px;
+    height: 290px;
+    background-color: yellowgreen;
     margin: 60px 0;
     position: relative;
     overflow: hidden;
@@ -383,8 +384,8 @@
 }
 
 .work {
-    width: 320px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     z-index: 100;
 }
 
@@ -462,10 +463,10 @@
 }
 
 .slider_works_arrow {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     cursor: pointer;
-
+    z-index: 100;
     position: absolute;
     top: 0;
 }
@@ -722,7 +723,7 @@
 .about_us_card {
     width: 50%;
     max-width: 700px;
-    min-width: 400px;
+    min-width: 370px;
     height: auto;
     background: var(--color_black);
     padding: 30px;
