@@ -360,9 +360,8 @@
 }
 
 .slider_works_container {
-    width: 290px;
-    height: 290px;
-    background-color: yellowgreen;
+    width: 310px;
+    height: 310px;
     margin: 60px 0;
     position: relative;
     overflow: hidden;
@@ -384,8 +383,8 @@
 }
 
 .work {
-    width: 270px;
-    height: 270px;
+    width: 290px;
+    height: 290px;
     z-index: 100;
 }
 
