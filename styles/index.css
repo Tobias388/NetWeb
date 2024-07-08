@@ -1254,11 +1254,11 @@
 @media screen and (max-width: 500px) {
     .slider_works_arrows_container {
         width: 100%;
-        padding: 0 4px;
+        padding: 0 8px;
     }
 
     .slider_reviews_arrows_container {
         width: 100%;
-        padding: 0 4px;
+        padding: 0 8px;
     }
 }
