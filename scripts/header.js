@@ -10,12 +10,16 @@ btn_menu.addEventListener('click', () => {
     btn_menu_line_arrow.classList.toggle('active')
 })
 
-for (let i = 0; i < menu_links.length; i++) {    
-    menu_links[i].addEventListener('click', () => {
-        header.classList.toggle('active')
-        btn_menu_line_arrow.classList.toggle('active')
-    })
-}
+window.addEventListener('resize', () => {
+    if(window.innerWidth <= 1140) {
+        for (let i = 0; i < menu_links.length; i++) {    
+            menu_links[i].addEventListener('click', () => {
+                header.classList.toggle('active')
+                btn_menu_line_arrow.classList.toggle('active')
+            })
+        }
+    }
+})
 
 
 window.addEventListener("scroll", () => {
