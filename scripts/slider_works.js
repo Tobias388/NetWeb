@@ -9,7 +9,7 @@ slider_margin = 0
 slider_works_arrow_left.addEventListener('click', () => {
     slider_count--
     slider_margin = slider_margin + 100
-    slider_works.style.marginLeft = 'calc('+ slider_margin + '% + 20px)' 
+    slider_works.style.marginLeft = slider_margin + '%' 
 
     if(slider_count == 1) {
         slider_works_arrow_left.style.display = 'none'
@@ -24,7 +24,7 @@ slider_works_arrow_left.addEventListener('click', () => {
 slider_works_arrow_right.addEventListener('click', () => {
     slider_count++
     slider_margin = slider_margin - 100
-    slider_works.style.marginLeft = 'calc('+ slider_margin + '% + 20px)' 
+    slider_works.style.marginLeft = slider_margin + '%' 
 
     if(slider_count == works.length) {
         slider_works_arrow_right.style.display = 'none'
