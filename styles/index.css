@@ -68,8 +68,8 @@
     width: auto;
     height: auto;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 14px;
+    right: 14px;
     z-index: 400;
     filter: invert(100%);
     background: var(--color_white);
@@ -1253,10 +1253,10 @@
 
 @media screen and (max-width: 500px) {
     .slider_works_arrows_container {
-        width: 90%;
+        width: 96%;
     }
 
     .slider_reviews_arrows_container {
-        width: 90%;
+        width: 96%;
     }
 }
