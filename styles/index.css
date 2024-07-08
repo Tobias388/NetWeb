@@ -1178,16 +1178,16 @@
         flex-direction: column;
     }
 
-    .header.active {
-        left: 0;
-    }
-
     .header.scroll_down {
         transform: translateX(0%) translateY(calc(0% - 0px));
     }
     
     .header.scroll_up {
         transform: translateX(0%) translateY(0);
+    }
+
+    .header.active {
+        left: 0;
     }
 
     .logo_container {
