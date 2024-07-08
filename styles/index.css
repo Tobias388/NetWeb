@@ -373,17 +373,17 @@
     width: 300%;
     height: 100%;
     list-style: none;
-    padding: 0 20px;
     transition: linear all .2s;
+    padding: 0 20px;
 
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .work {
-    width: 300px;
+    width: 320px;
     height: 300px;
     z-index: 100;
 }
@@ -1253,10 +1253,12 @@
 
 @media screen and (max-width: 500px) {
     .slider_works_arrows_container {
-        width: 96%;
+        width: 100%;
+        padding: 0 4px;
     }
 
     .slider_reviews_arrows_container {
-        width: 96%;
+        width: 100%;
+        padding: 0 4px;
     }
 }
