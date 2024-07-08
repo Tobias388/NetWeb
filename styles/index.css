@@ -361,11 +361,12 @@
 }
 
 .slider_works_container {
-    width: 310px;
-    height: 310px;
+    width: 320px;
+    height: 320px;
     margin: 60px 0;
     position: relative;
     overflow: hidden;
+    background-color: yellowgreen;
 
     display: flex;
 }
@@ -384,8 +385,8 @@
 }
 
 .work {
-    width: 290px;
-    height: 290px;
+    width: 300px;
+    height: 280px;
     z-index: 100;
 }
 
@@ -1078,7 +1079,6 @@
 }
 
 @media(hover:hover) {
-
     .btn_menu_container:hover .menu_line:nth-child(2) {
         width: 130%;
         margin-left: 30%;
