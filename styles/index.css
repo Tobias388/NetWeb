@@ -112,6 +112,11 @@
     transform: translateX(-50%) translateY(0);
 }
 
+.header.active {
+    left: 0;
+    transform: translateX(0);
+}
+
 .logo_container {
     width: auto;
     height: 80%;
@@ -1196,6 +1201,7 @@
 
     .header.active {
         left: 0;
+        transform: translateX(0);
     }
 
     .logo_container {
