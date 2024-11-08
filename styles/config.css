@@ -113,3 +113,49 @@ a[role="button"] > img {
         top: 50%;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+    }
+    
+    a,p,li,span,input,label,button {
+        font-size: 1.06rem;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    h4 {
+        font-size: 1.15rem;
+    }
+    
+    a,p,li,span,input,label,button {
+        font-size: 1.04rem;
+    }
+}
