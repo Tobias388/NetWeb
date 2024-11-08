@@ -35,7 +35,6 @@
 }
 
 .title {
-    font-size: 3rem;
     color: var(--color_white);
 }
 
@@ -101,7 +100,6 @@
 .title_word {
     width: auto;
     height: 100%;
-    font-size: 3rem;
     color: var(--color_light_blue);
 }
 
@@ -566,7 +564,6 @@
     height: auto;
     color: var(--color_green);
     z-index: 100;
-    font-size: 2.2rem;
 }
 
 .contact_us_btn {
