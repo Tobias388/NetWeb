@@ -186,7 +186,7 @@
 
     .footer_item:first-child {
         width: 100%;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .footer_item:last-child {
@@ -203,6 +203,6 @@
 
     .all_pages, .all_content {
         width: 100%;
-        align-items: center;
+        align-items: flex-start;
     }
 }
