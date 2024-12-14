@@ -30,52 +30,6 @@
     z-index: 100;
 }
 
-.banner_background_item {
-    position: absolute;
-    width: 60%;
-    height: 50%;
-    background: var(--color_green);
-    top: 50%;
-    transform: translateY(-50%);
-    filter: blur(80px);
-}
-
-.banner_background_item_left {
-    transform: translateY(0%);
-    left: -25%;
-    animation: item_left 3.2s linear 0s infinite alternate;
-}
-
-.banner_background_item_right {
-    right: -25%;
-    transform: translateY(-100%);
-    animation: item_right 3.2s linear 0s infinite alternate;
-}
-
-@keyframes item_left {
-    from {
-        top: 30%;
-        left: -25%;
-    }
-
-    to {
-        top: 50%;
-        left: -15%;
-    }
-}
-
-@keyframes item_right {
-    from {
-        top: 50%;
-        right: -25%;
-    }
-
-    to {
-        top: 50%;
-        right: -15%;
-    }
-}
-
 .section_mision_vision {
     width: 100%;
     height: auto;
