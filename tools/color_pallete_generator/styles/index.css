@@ -1,0 +1,119 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tag {
+    color: var(--color_white);
+}
+
+.title {
+    color: var(--color_light_blue);
+    text-align: center;
+}
+
+.colors {
+    width: 60%;
+    height: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color {
+    width: min-content;
+    flex-grow: 1;
+    min-width: 170px;
+    height: 100%;
+    cursor: pointer;
+    transition: ease-out .4s;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.color_code_container {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: var(--color_white);
+}
+
+.color_code {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color_dark_blue);
+    text-align: center;
+}
+
+.btn_generate, .btn_count {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: var(--color_green);
+    color: var(--color_white);
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.btn_generate_text,
+.btn_generate_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: ease-out .4s;
+    font-weight: bold;
+}
+
+.btn_generate_icon {
+    width: auto;
+    height: 90%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: ease-out .4s;
+    filter: grayscale(100%);
+}
+
+@media(hover:hover) {
+
+    .btn_generate:hover .btn_generate_text {
+        top: 0;
+        transform: translate(-50%, -100%);
+    }
+
+    .btn_generate:hover .btn_generate_icon {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .color:hover {
+        flex-grow: 1.6;
+    }
+}
+
+@media screen and (max-width: 1134px) {
+    .color {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .color {
+        min-width: 120px;
+    }
+}
