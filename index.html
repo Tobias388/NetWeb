@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/config.css">
+    <link rel="stylesheet" href="styles/templates/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/templates/contact_us.css">
+    <link rel="stylesheet" href="styles/templates/footer.css">
+
+    <link rel="shortcut icon" href="media/icons/logo/net_web_logo.png" type="image/x-icon">
+
+    <title>Net Web</title>
+</head>
+
+<body id="body">
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="btn_header_opened" id="btn_header_opened">
+        <div class="btn_menu_line"></div>
+        <div class="btn_menu_line"></div>
+        <div class="btn_menu_line"></div>
+    </div>
+
+    <header class="header" id="header">
+
+        <div class="btn_header_closed" id="btn_header_closed">
+            <div class="btn_menu_line"></div>
+            <div class="btn_menu_line"></div>
+            <div class="btn_menu_line"></div>
+        </div>
+
+        <a href="index.html" class="logo_container">
+            <img src="media/icons/logo/net_web_logo.png" alt="Logo Net Web" title="Logo Net WEb" class="logo_icon">
+            <h3 class="logo_text">Net Web</h3>
+        </a>
+
+        <nav class="nav_bar">
+            <ul class="menu">
+                <li class="menu_item" id="tools_item">
+                    <span class="menu_item_text">Herramientas</span>
+                    <img src="media/icons/arrows/arrow_down_icon.png" alt="" class="menu_item_arrow_icon"
+                        id="tools_item_icon">
+                </li>
+                <li class="menu_item menu_accordion_tools">
+                    <div class="menu_tools">
+                        <a href="#" class="menu_tools_link">
+                            Acortador de URL´s
+                        </a>
+                        <a href="#" class="menu_tools_link">
+                            Editor de imágenes
+                        </a>
+                        <a href="tools/color_pallete_generator/index.html" class="menu_tools_link">
+                            Generador de colores
+                        </a>
+                        <a href="tools/password_generator/index.html" class="menu_tools_link">
+                            Genrador de contraseñas
+                        </a>
+                    </div>
+                </li>
+                <li class="menu_item" id="to_last_item">
+                    <span class="menu_item_text">Lo Ultimo</span>
+                    <img src="media/icons/arrows/arrow_down_icon.png" alt="" class="menu_item_arrow_icon"
+                        id="to_last_item_icon">
+                </li>
+                <li class="menu_item menu_accordion_to_last">
+                    <div class="menu_to_last">
+                        <h4 class="menu_to_last_title">Proximamente</h4>
+                    </div>
+                </li>
+                <li class="menu_item" id="about_us_item">
+                    <span class="menu_item_text">Nosotros</span>
+                    <img src="media/icons/arrows/arrow_down_icon.png" alt="" class="menu_item_arrow_icon"
+                        id="about_us_item_icon">
+                </li>
+                <li class="menu_item menu_accordion_about_us">
+                    <div class="menu_about_us">
+                        <h4 class="menu_about_us_title">Empresa</h4>
+                        <a href="pages/about_us.html" class="menu_about_us_link">Sobre Nosotros</a>
+                        <a href="pages/our_team.html" class="menu_about_us_link">Nuestro Equipo</a>
+                        <a href="pages/contact_us.html" class="menu_about_us_link">Contacto</a>
+                        <h4 class="menu_about_us_title">Contenido</h4>
+                        <a href="#" class="menu_about_us_link">Blog (Proximamente)</a>
+                        <h4 class="menu_about_us_title">Ult. Trabjos</h4>
+                    </div>
+                </li>
+                <li class="menu_item">
+                    <a href="pages/prices.html" class="menu_link">
+                        <span class="menu_item_text">Precios</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="#" class="contact_us_btn" role="button">
+            <span>Contactanos</span>
+            <img src="media/icons/socials_networks/whatsapp_icon.png" alt="Whatsapp icono net web"
+                title="Whatsapp icono net web">
+        </a>
+
+        <div class="header_about_us" id="header_about_us">
+            <div class="titles_about_us">
+                <h4 class="title_item">Empresa</h4>
+                <h4 class="title_item">Contenido</h4>
+                <h4 class="title_item">Ult. Trabajos</h4>
+            </div>
+            <ul class="header_about_us_list">
+                <li class="header_about_us_item">
+                    <a href="pages/about_us.html" class="header_about_us_link">
+                        <h5 class="header_about_us_item_title">Sobre Nosotros</h5>
+                        <p class="header_about_us_item_description">Aprende nuestra historia misión y visión.</p>
+                    </a>
+                </li>
+                <li class="header_about_us_item">
+                    <a href="pages/our_team.html" class="header_about_us_link">
+                        <h5 class="header_about_us_item_title">Nuestro Equipo</h5>
+                        <p class="header_about_us_item_description">Descubre los esfuerzos de la empresa.</p>
+                    </a>
+                </li>
+                <li class="header_about_us_item">
+                    <a href="pages/contact_us.html" class="header_about_us_link">
+                        <h5 class="header_about_us_item_title">Contacto</h5>
+                        <p class="header_about_us_item_description">Número, redes sociales y email</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header_about_us_list">
+                <li class="header_about_us_item">
+                    <a href="" class="header_about_us_link">
+                        <h5 class="header_about_us_item_title">Blog</h5>
+                        <p class="header_about_us_item_description">(Proximamente)</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header_about_us_list">
+
+            </ul>
+        </div>
+
+        <div class="header_to_last" id="header_to_last">
+            <h2 class="coming_soon">Próximamente</h2>
+        </div>
+
+        <div class="header_tools" id="header_tools">
+            <ul class="header_tools_list">
+                <li class="header_tools_item">
+                    <a href="" class="header_tools_link">
+                        <h5 class="header_tools_item_title">Acortador de URL´s</h5>
+                    </a>
+                </li>
+                <li class="header_tools_item">
+                    <a href="" class="header_tools_link">
+                        <h5 class="header_tools_item_title">Editor de imágenes</h5>
+                    </a>
+                </li>
+                <li class="header_tools_item">
+                    <a href="tools/color_pallete_generator/index.html" class="header_tools_link">
+                        <h5 class="header_tools_item_title">Generador de colores</h5>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header_tools_list">
+                <li class="header_tools_item">
+                    <a href="tools/password_generator/index.html" class="header_tools_link">
+                        <h5 class="header_tools_item_title">Generador de contraseñas</h5>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header_tools_list">
+
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section_banner">
+            <div class="banner_item">
+                <h3 class="tag">#DesarrolloWeb</h3>
+                <h1 class="title">Convertimos tus ideas en experiencias web <span class="title_words_container">
+                        <span class="title_words_group">
+                            <span class="title_word">impresionantes</span>
+                            <span class="title_word">innovadoras</span>
+                            <span class="title_word">perzonalizadas</span>
+                            <span class="title_word">optimas</span>
+                        </span>
+                        <span class="title_words_group">
+                            <span class="title_word">impresionantes</span>
+                            <span class="title_word">innovadoras</span>
+                            <span class="title_word">perzonalizadas</span>
+                            <span class="title_word">optimas</span>
+                        </span>
+                    </span>
+                </h1>
+                <p class="description">No solo creamos sitios web, ¡creamos oportunidades de crecimiento! Nos enfocamos
+                    en desarrollar soluciones web que impulsen tu idea y la pongan al frente.</p>
+                <a href="#" class="banner_btn" role="button">
+                    <span>Empezar</span>
+                    <img src="media/icons/socials_networks/whatsapp_icon.png" alt="Whatsapp icono net web"
+                        title="Whatsapp icono net web">
+                </a>
+            </div>
+            <div class="banner_item">
+                <img src="media/images/banner/banner_img.svg" alt="Imagen de banner de net web"
+                    title="Imagen de banner de net web" class="banner_img">
+            </div>
+        </section>
+
+        <section class="section_companies">
+            <h2 class="title_companies">Nos eligieron </h2>
+
+            <ul class="companies">
+                <li class="company">
+                    <img src="media/icons/companies/bordados_arte_logo.png" alt="Bordados Arte Logo"
+                        title="Bordados Arte Logo" class="company_icon">
+                </li>
+                <li class="company">
+                    <img src="media/icons/companies/cp_goma_logo.png" alt="Cp Goma Logo" title="Cp Goma Logo"
+                        class="company_icon">
+                </li>
+                <li class="company">
+                    <img src="media/icons/companies/mexus_logo.png" alt="Mexus Logo" title="Mexus Logo"
+                        class="company_icon">
+                </li>
+                <li class="company">
+                    <img src="media/icons/companies/sybisa_logo.png" alt="Sybisa Logo" title="Sybisa Logo"
+                        class="company_icon">
+                </li>
+            </ul>
+        </section>
+
+        <section class="section_benefits">
+            <h2 class="benefits_title">Crece más con soluciones digitales efectivas</h2>
+
+            <ul class="benefits">
+                <li class="benefit">
+                    <a href="#benefit_one_tag" class="benefit_link">
+                        <img src="media/images/benefits/benefit1_img.svg" alt="Icono del beneficio 1"
+                            title="Icono del beneficio 1" class="benefit_img">
+                        <h4 class="benefit_title">Diseño Profesional y Atractivo</h4>
+                        <p class="benefit_description">Creamos una excelente primera impresión, reflejando la identidad
+                            de tu marca.</p>
+                    </a>
+                </li>
+                <li class="benefit">
+                    <a href="#benefit_two_tag" class="benefit_link">
+                        <img src="media/images/benefits/benefit2_img.svg" alt="Icono del beneficio 2"
+                            title="Icono del beneficio 2" class="benefit_img">
+                        <h4 class="benefit_title"> Desarrollo Personalizado</h4>
+                        <p class="benefit_description">Adaptamos tu sitio web a tus necesidades y objetivos.</p>
+                    </a>
+                </li>
+                <li class="benefit">
+                    <a href="#benefit_three_tag" class="benefit_link">
+                        <img src="media/images/benefits/benefit4_img.svg" alt="Icono del beneficio 3"
+                            title="Icono del beneficio 3" class="benefit_img">
+                        <h4 class="benefit_title">Funcionalidades Específicas</h4>
+                        <p class="benefit_description">Incorporamos herramientas personalizadas que mejoran la
+                            experiencia y optimizan las operaciones.</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section_benefit_one">
+            <h4 class="benefit_tag" id="benefit_one_tag">Net Web</h4>
+            <h2 class="benefit_one_title">Diseño Profesional y Atractivo</h2>
+            <p class="benefit_one_description">Fundamental para captar la atención de los visitantes y transmitir
+                credibilidad. Al integrar elementos estéticos con una experiencia de usuario intuitiva, se fomenta la
+                interacción y la retención de usuarios.</p>
+
+            <div class="benefit_one">
+                <div class="benefit_one_item">
+                    <img src="media/images/benefits/benefit_one/benefit_one_img.svg" alt="" class="benefit_one_img">
+                </div>
+                <div class="benefit_one_item">
+                    <ul class="benefit_list">
+                        <li class="benefit_item">
+                            <div class="benefit_icon_container">
+                                <img src="media/icons/benefits/benefit_one/benet1_impression_icon.png" alt=""
+                                    class="benefit_icon">
+                            </div>
+                            <div class="benefit_info_container">
+                                <h4 class="benefit_info_title">Primera impresión duradera</h4>
+                                <p class="benefit_info_description">Un diseño atractivo capta la atención de los
+                                    visitantes creando una impresión positiva.</p>
+                            </div>
+                        </li>
+                        <li class="benefit_item">
+                            <div class="benefit_icon_container">
+                                <img src="media/icons/benefits/benefit_one/benefit1_credibility_icon.png" alt=""
+                                    class="benefit_icon">
+                            </div>
+                            <div class="benefit_info_container">
+                                <h4 class="benefit_info_title">Reflejo de Credibilidad</h4>
+                                <p class="benefit_info_description">Un sitio bien diseñado transmite profesionalismo,
+                                    seriedad y confianza.</p>
+                            </div>
+                        </li>
+                        <li class="benefit_item">
+                            <div class="benefit_icon_container">
+                                <img src="media/icons/benefits/benefit_one/benefit1_ux_icon.png" alt=""
+                                    class="benefit_icon">
+                            </div>
+                            <div class="benefit_info_container">
+                                <h4 class="benefit_info_title">Experiencia de Usuario Mejorada</h4>
+                                <p class="benefit_info_description">Un diseño intuitivo y atractivo no solo se ve bien,
+                                    sino que también facilita la navegación.</p>
+                            </div>
+                        </li>
+                        <li class="benefit_item">
+                            <div class="benefit_icon_container">
+                                <img src="media/icons/benefits/benefit_one/benefit1_competence_icon.png" alt=""
+                                    class="benefit_icon">
+                            </div>
+                            <div class="benefit_info_container">
+                                <h4 class="benefit_info_title">Diferenciación Competitiva</h4>
+                                <p class="benefit_info_description">En un mercado saturado, un diseño distintivo ayuda a
+                                    destacar.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_benefit_two">
+            <h4 class="benefit_tag" id="benefit_two_tag">Net Web</h4>
+            <h2 class="benefit_two_title">Desarrollo Personalizado</h2>
+            <p class="benefit_two_description">Permite crear soluciones a medida que se ajustan perfectamente a las
+                necesidades y objetivos únicos de cada proyecto.</p>
+
+            <ul class="benefit_two_list">
+                <li class="benefit_two_item">
+                    <img src="media/images/benefits/benefit_two/benefit1.svg" alt="" class="benefot_two_item_img">
+                    <h4 class="benefit_two_item_title">Adaptación a Necesidades Específicas</h4>
+                    <p class="benefit_two_item_description">Desarrollo a medida implementando funciones personalizadas.
+                    </p>
+                </li>
+                <li class="benefit_two_item">
+                    <img src="media/images/benefits/benefit_two/benefit2.svg" alt="" class="benefot_two_item_img">
+                    <h4 class="benefit_two_item_title">Escalabilidad y Flexibilidad</h4>
+                    <p class="benefit_two_item_description">Un proyecto crece junto con el tiempo, permitiendo la
+                        integración de nuevas características.</p>
+                </li>
+                <li class="benefit_two_item">
+                    <img src="media/images/benefits/benefit_two/benefit3.svg" alt="" class="benefot_two_item_img">
+                    <h4 class="benefit_two_item_title">Mayor Control y Diferenciación</h4>
+                    <p class="benefit_two_item_description">El desarrollo personalizado permite un control total sobre
+                        el diseño y las funcionalidades.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section_benefit_three">
+            <h4 class="benefit_tag" id="benefit_three_tag">Net Web</h4>
+            <h2 class="benefit_three_title">Funcionalidades Especificas</h2>
+
+            <ul class="benefit_three_list">
+                <li class="benefit_three_item">
+                    <div class="benefit_three_item_icon_container">
+                        <img src="media/icons/benefits/benefit_three/benefit1_icon.png" alt=""
+                            class="benefit_three_item_icon">
+                    </div>
+                    <div class="benefit_three_item_info_container">
+                        <h4 class="benefit_three_item_title">Soluciones a Medida</h4>
+                        <p class="benefit_three_item_description">Las funcionalidades específicas permiten desarrollar
+                            herramientas personalizadas.</p>
+                    </div>
+                </li>
+                <li class="benefit_three_item">
+                    <div class="benefit_three_item_icon_container">
+                        <img src="media/icons/benefits/benefit_three/benefit2_icon.png" alt=""
+                            class="benefit_three_item_icon">
+                    </div>
+                    <div class="benefit_three_item_info_container">
+                        <h4 class="benefit_three_item_title">Experiencia del Usuario</h4>
+                        <p class="benefit_three_item_description">Se mejora la interacción y se facilita la navegación.
+                        </p>
+                    </div>
+                </li>
+                <li class="benefit_three_item">
+                    <div class="benefit_three_item_icon_container">
+                        <img src="media/icons/benefits/benefit_three/benefit3_icon.png" alt=""
+                            class="benefit_three_item_icon">
+                    </div>
+                    <div class="benefit_three_item_info_container">
+                        <h4 class="benefit_three_item_title">Integraciones Avanzadas</h4>
+                        <p class="benefit_three_item_description">Las funcionalidades personalizadas permiten la
+                            integración con otros sistemas.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section_contact_us">
+            <a href="#" class="contact_us_link_container">
+                <h2 class="contact_us_title">Hagamos tu idea realidad</h2>
+                <button class="contact_us_btn">CONTÁCTANOS</button>
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_item">
+            <a href="#body" class="footer_logo_container">
+                <img src="media/icons/logo/net_web_logo.png" alt="Logo Net Web" class="footer_logo_icon">
+                <h3 class="footer_logo_text">Net Web</h3>
+            </a>
+            <ul class="contact_info">
+                <li class="contact_data">
+                    <a href="#" class="contact_data_link">
+                        <img src="media/icons/contact/email_icon.png" alt="" class="contact_data_icon">
+                        <span class="contact_data_text">netweb@gmail.com</span>
+                    </a>
+                </li>
+                <li class="contact_data">
+                    <a href="#" class="contact_data_link">
+                        <img src="media/icons/contact/telephone_icon.png" alt="" class="contact_data_icon">
+                        <span class="contact_data_text">(+54) 11 26342839</span>
+                    </a>
+                </li>
+                <li class="contact_data">
+                    <a href="#" class="contact_data_link">
+                        <img src="media/icons/contact/location_icon.png" alt="" class="contact_data_icon">
+                        <span class="contact_data_text">Buenos Aires, Argentina</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="socials_networks">
+                <li class="social_network">
+                    <a href="#" class="social_network_link">
+                        <img src="media/icons/socials_networks/instagram_icon.png" alt="" class="social_network_icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_item">
+            <ul class="all_pages">
+                <li class="page">
+                    Páginas
+                </li>
+                <li class="page">
+                    <a href="index.html" class="page_link">Inicio</a>
+                </li>
+                <li class="page">
+                    <a href="pages/about_us.html" class="page_link">Sobre Nosotros</a>
+                </li>
+                <li class="page">
+                    <a href="pages/our_team.html" class="page_link">Nuestro Equipo</a>
+                </li>
+                <li class="page">
+                    <a href="#" class="page_link">Servicios</a>
+                </li>
+                <li class="page">
+                    <a href="pages/contact_us.html" class="page_link">Contacto</a>
+                </li>
+            </ul>
+            <ul class="all_content">
+                <li class="page">
+                    Contenido
+                </li>
+                <li class="content">
+                    <a href="#" class="content_link">Blog (Proximamente)</a>
+                </li>
+                <li class="content">
+                    <a href="#" class="content_link">Ult. Trabajos</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts/header.js"></script>
+    <script src="scripts/headers.js"></script>
+
+</body>
+
+</html>
