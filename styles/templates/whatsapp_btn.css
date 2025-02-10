@@ -1,0 +1,30 @@
+.whatsapp_btn {
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp_btn_icon {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    filter: invert(100%);
+    transition: ease .4s;
+}
+
+.whatsapp_btn_icon.active {
+    filter: invert(0%);
+}
+
+@media(hover:hover) {
+    .whatsapp_btn:hover {
+        transform: scale(110%);
+    }
+}
